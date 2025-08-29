@@ -25,4 +25,9 @@ chown bind:bind -R /etc/namedb
 mkdir /var/log/named
 touch /var/log/named/security.log
 chmod a+w -R /var/log/named
-
+#buatnamed.sh
+chmod +x buatnamed.sh
+#sandi
+touch /usr/local/directslave/etc/passwd
+chown bind:bind /usr/local/directslave/etc/passwd
+# directslave.sh
