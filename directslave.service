@@ -1,0 +1,11 @@
+# /etc/systemd/system/directslave.service
+[Unit]
+Description=DirectSlave for DA
+After=network.target
+
+[Service]
+ExecStart=/usr/local/directslave/bin/directslave --run
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
